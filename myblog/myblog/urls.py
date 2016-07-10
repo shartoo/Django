@@ -17,10 +17,10 @@ from django.conf.urls import url
 from django.contrib import admin
 
 from django.conf.urls import *
-from article.view import hello
-from article.testdb import testdb
+from myblog.article.views import hello
+from myblog.article.testdb import testdb
 
 urlpatterns = patterns("",
-	('^hello/$', hello),
-	('^testdb/$', testdb),
+	('^hello/$', view.hello),
+	('^testdb/$', view.testdb),
 )

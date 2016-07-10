@@ -4,7 +4,7 @@ from django.shortcuts import render
 
 # Create your views here.
 from django.http import HttpResponse
-from article.models import Article
+from models import Article
 
 def hello(request):
     return HttpResponse("Hello world!")
